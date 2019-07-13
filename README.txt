@@ -1,3 +1,12 @@
+***************************Discrete Event Simulator For RTOS Scheduler***************************
+
+Scheduling algorithms implemented:
+First In First Out (FIFO) - fifo.cpp
+Rate Monotonic Scheduling (RMS) - rms.cpp
+Earliest Deadline First (EDF) - edf.cpp
+
+*************************************************************************************************
+
 Project directory for RTOS Scheduler. RMS, EDF & FIFO scheduling with unit tests.
 
 To run with DICE framework tests:
@@ -9,7 +18,7 @@ To run independently:
 -Compile C++ file (rms.cpp [RMS], edf.cpp [EDF], fifo.cpp [FIFO])
 -Run: executable.out(exe) setup.txt arrivals.txt
 
-
+*************************************************************************************************
 Tests for the simulator.
 
 Every Individual Test Subdirectory should include two files "setup.txt" and
@@ -95,7 +104,8 @@ Two special values of "task-id" are reserved for the context switching overhead 
 idle execution. These values are: '0' for the context switching overhead and "-1" for
 idle execution.
 
-For example, given the above values for setup.txt and arrivals.txt, using a RMS or EDF schedules, the correct-output.txt should be:
+For example, given the above values for setup.txt and arrivals.txt, using a RMS or EDF schedules,
+the correct-output.txt should be:
 0 1.1
 1 0.1
 2 2.1
@@ -104,5 +114,5 @@ For example, given the above values for setup.txt and arrivals.txt, using a RMS 
 60 2.2
 70 -1.2
   
-
+*************************************************************************************************
 
